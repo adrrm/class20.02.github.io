@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .h1{
+         color:red;
+         font-size: 40px;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <h1>Calculadora Simple</h1>
+
+      <input type="number" id="numero1" placeholder="Ingrese el primer numero"><br>
+      <input type="number" id="numero2" placeholder="Ingrese el segundo numero"><br>
+      <button onclick="javascript: sumar();" style="color: green; font-weight: bolder;">+</button>
+      <button onclick="javascript: restar();" style="color: green; font-weight: bolder;">-</button>
+      <button onclick="javascript: multiplicar();" style="color: green; font-weight: bolder;">*</button>
+      <button onclick="javascript: dividir();" style="color: green; font-weight: bolder;">/</button>
+      <div id="resultado"></div>
+   <br>
+   <script>
+      function sumar(num1,num2)
+      {
+         var num1=parseFloat(document.getElementById("numero1").value);
+         var num2=parseFloat(document.getElementById("numero2").value);
+         var resultado1=num1+num2;
+         document.getElementById("resultado").innerHTML="RESULTADO:"+resultado1;
+      }
+      function restar(num1,num2)
+      {
+         var num1=parseFloat(document.getElementById("numero1").value);
+         var num2=parseFloat(document.getElementById("numero2").value);
+         var resultado2=num1-num2;
+         document.getElementById("resultado").innerHTML="RESULTADO:"+resultado2;
+      }
+      function multiplicar(num1,num2)
+      {
+         var num1=parseFloat(document.getElementById("numero1").value);
+         var num2=parseFloat(document.getElementById("numero2").value);
+         var resultado3=num1*num2;
+         document.getElementById("resultado").innerHTML="RESULTADO:"+resultado3;
+      }
+      function dividir(num1,num2)
+      {
+         var num1=parseFloat(document.getElementById("numero1").value);
+         var num2=parseFloat(document.getElementById("numero2").value);
+         var resultado4=num1/num2;
+         document.getElementById("resultado").innerHTML="RESULTADO:"+resultado4;
+      }
+   </script>
+   
+   
+</body>
+</html>
