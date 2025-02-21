@@ -10,26 +10,29 @@
    <input id="dato" placeholder="INGRESE SU NUMERO">
    <button onclick="javascript=dato();">VALIDAR</button>
    <script>
-      var dato=parseInt(document.getElementById("numero").value);
-      switch(dato){
-         case 10:
-            document.write("El valor es 10");
-            break;
-         case 20:
-            document.write("El valor es 20");
-            break;
-         case 30:
-            document.write("El valor es 30");
-            break;
-         case 40:
-            document.write("El valor es 40");
-            break;
-         case 50:
-            document.write("El valor es 50");
-            break;
-         default:
-            document.write("Los valores ingresados no son ni 10, ni 20, ni 30, ni 40, ni 50.");
+      function dato(dato){
+         var dato=parseInt(document.getElementById("dato")).value;
+         switch(dato){
+            case 10:
+               document.write("El valor es 10");
+               break;
+            case 20:
+               document.write("El valor es 20");
+               break;
+            case 30:
+               document.write("El valor es 30");
+               break;
+            case 40:
+               document.write("El valor es 40");
+               break;
+            case 50:
+               document.write("El valor es 50");
+               break;
+            default:
+               document.write("Los valores ingresados no son ni 10, ni 20, ni 30, ni 40, ni 50.");
+         }
       }
+      
    </script>
 </body>
 </html> 
