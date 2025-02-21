@@ -9,21 +9,25 @@
    
    <input id="nombre" placeholder="INGRESE SU NOMBRE">
    <input id="edad" placeholder="INGRESE SU EDAD">
-   <button onclick="javascript=nombre(); javascript=number()">Calcular</button>
+   <button onclick="javascript=nombre()">Calcular</button>
 
    <script>
       function nombre(){
-         var nombre= document.getElementById("nombre").value;
+
+         var name= document.getElementById("nom").value;
          var edad= document.getElementById("edad").value;
 
-         if(nombre="text" , edad==number){
-            window.alert("Hola, "+ nombre + ". " + "Usted tiene "+ edad + " años.");
+         if(isNaN){
+            window.alert("Hola, "+ name + ". " + "Usted no ha ingresado un numero.");
          }
-         else(!(nombre) || !(edad)){
-            window.alert("Usted no ha ingresado un nombre, ni una edad.");
+         else if(edad>18){
+            window.alert("Hola, "+ name + "." + "Usted es mayor de edad" );
          }
-      }
-
+         else{
+            window.alert("Hola, "+ name + "." + "Usted es menor de edad");
+         }
+         }
+      
    </script>
    <div id="nombre"></div>
 </body>
