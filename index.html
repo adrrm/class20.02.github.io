@@ -7,15 +7,23 @@
 </head>
 <body>
    
-   <input id="nombrepersona">
-   <button onclick="javascript=nombre();">Calcular</button>
+   <input id="nombre">
+   <input id="edad">
+   <button onclick="javascript=nombre(); javascript=number()">Calcular</button>
+
    <script>
       function nombre(){
-         var nom= (document.getElementById("nombrepersona").value).length;
-      
-         document.getElementById("nombre").innerHTML="La cantidad de caracteres es: "+nom;
+         var nombre= document.getElementById("nombre").value;
+         var edad= document.getElementById("edad").value;
+
+         if(nombre="text" , edad==number){
+            window.alert("Hola, "+ nombre + ". " + "Usted tiene "+ edad + " años.");
+         }
+         else(!(nombre) || !(edad)){
+            window.alert("Usted no ha ingresado un nombre, ni una edad.");
+         }
       }
-      nombre(nom);
+
    </script>
    <div id="nombre"></div>
 </body>
