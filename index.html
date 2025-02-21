@@ -6,12 +6,12 @@
    <title>Document</title>
 </head>
 <body>
-   <div id="dato"></div>
+   
    <input id="dato" placeholder="INGRESE SU NUMERO">
    <button onclick="javascript=dato();">VALIDAR</button>
    <script>
-      function dato(dato){
-         var dato=parseInt(document.getElementById("dato")).value;
+      function dato(){
+         var dato=parseFloat(document.getElementById("dato").value);
          switch(dato){
             case 10:
                document.write("El valor es 10");
