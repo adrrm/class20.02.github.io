@@ -7,29 +7,20 @@
 </head>
 <body>
    
-   <input id="dato" placeholder="INGRESE SU NUMERO">
+   <input id="datos" placeholder="INGRESE SU NOMBRE" type="text">
    <button onclick="javascript=dato();">VALIDAR</button>
    <script>
       function dato(){
-         var dato=parseFloat(document.getElementById("dato").value);
+         var dato=document.getElementById("datos").value;
          switch(dato){
-            case 10:
-               document.write("El valor es 10");
+            case "Enrique":
+               document.write("El nombre ingresado es Enrique.");
                break;
-            case 20:
-               document.write("El valor es 20");
-               break;
-            case 30:
-               document.write("El valor es 30");
-               break;
-            case 40:
-               document.write("El valor es 40");
-               break;
-            case 50:
-               document.write("El valor es 50");
+            case "Alexandra":
+               document.write("El nombre ingresado es Alexandra.");
                break;
             default:
-               document.write("Los valores ingresados no son ni 10, ni 20, ni 30, ni 40, ni 50.");
+               document.write("El valor ingresado no coincide con ningun dato.");
          }
       }
       
